@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+	<title>FUJIFILM</title>
+	<meta name="keywords" content="후지필름, 주식회사 후지필름, 장애인 표준 사업장" />	<meta name="Description" content="후지필름 카메라는 최고의 사진 품질과 혁신적인 기술로 세계적으로 알려진 브랜드입니다." />		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<link rel='canonical' href='https://withuplus.co.kr/' />
+	<link rel="stylesheet" href="/common/css/common.css">
+	<link rel="stylesheet" href="/common/css/gsap.css">
+	<link rel="stylesheet" href="/common/css/main.css">
+	<link rel="stylesheet" href="/common/css/style.css">
+	<!-- <link rel="stylesheet" href="/common/css/aos.css">
+	<link rel="stylesheet" href="/common/css/board.css">
+	<link rel="stylesheet" href="/common/css/font.css">
+	<link rel="stylesheet" href="/common/css/layout.css">
+	<link rel="stylesheet" href="/common/css/style_sb.css"> -->
+
+	<!-- <link rel='stylesheet' href='https:////netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css'> -->
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css'>
+	
+
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/common/js/slick.min.js"></script>
+	<script type="text/javascript" src="/common/js/swiper.min.js"></script>
+	<script type="text/javascript" src="/common/js/common.js"></script>
+	<script type="text/javascript" src="/common/js/_basicFunction.js"></script>
+	<script type="text/javascript" src="/common/js/aos.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
+
+	
+	
+
+
+	<!-- 페이스북 -->
+	<meta property="og:title"			content="후지필름"/>
+	<meta property="og:site_name"		content="후지필름"/>
+	<meta property="og:type"			content=""/>
+	<meta property="og:url"				content=""/>
+	<meta property="og:image"			content="/images/common/og.png">
+	<meta property="og:image:width"		content=""/>
+	<meta property="og:description"		content="후지필름 카메라는 최고의 사진 품질과 혁신적인 기술로 세계적으로 알려진 브랜드입니다."/>
+	<!-- 트위터 -->
+	<meta name="twitter:card"			content="summary_large_image">
+	<meta name="twitter:title"			content="후지필름">
+	<meta name="twitter:site"			content="후지필름">
+	<meta name="twitter:creator"		content="후지필름">
+	<meta name="twitter:image"			content="/images/common/og.png">
+	<meta name="twitter:description"	content="후지필름 | 후지필름 | ">
+
+<script>
+	$(function(){
+
+		var pc_v= matchMedia("screen and (min-width:1281px)"); 
+		if(pc_v.matches){ 
+			/********** PC ONLY **********/
+			/* MAIN VISUAL */
+			let main_visual = gsap.timeline({
+				scrollTrigger: { 
+					trigger: '#main_visual .visual_tit',
+					start: "top top",
+					end: "100% bottom",
+					scrub: true,
+				},
+			});
+
+			main_visual
+			.to('#main_visual',.7,{className:'container sceneA'})
+			.to('#main_visual',1,{className:'container sceneA sceneB'})
+			.to('#main_visual',1,{className:'container sceneA sceneB sceneC'})
+
+			let main_visual2 = gsap.timeline({
+				scrollTrigger: { 
+					trigger: '#main_visual .visual_info',
+					start: "20% bottom",
+					end: "100% bottom",
+					scrub: true,
+				},
+			});
+
+			main_visual2
+			.to('#main_visual',1.5,{className:'container sceneA sceneB sceneC sceneD'})
+			.to('#main_visual',1,{className:'container sceneA sceneB sceneC sceneD sceneE'})
+			.to('#main_visual',1,{className:'container sceneA sceneB sceneC sceneD sceneE sceneF'})
+			.to('#main_visual',1,{className:'container sceneA sceneB sceneC sceneD sceneE sceneF sceneG'})
+		}else{
+			/********** MO ONLY **********/
+			setTimeout(function() {
+				$('#main_visual').addClass('scene1');
+			}, 1500);
+			setTimeout(function() {
+				$('#main_visual').addClass('scene2');
+			}, 3000);
+
+		}
+
+		/* ABOUT : KEYWORD */
+		var swiper = new Swiper("#main_about .about_keyword .swiper", {
+			freeMode: true,
+			spped: 1000,
+			slidesPerView: 'auto',
+			navigation: {
+				prevEl: "#main_about .about_keyword .nav .prv",
+				nextEl: "#main_about .about_keyword .nav .nxt",
+			},
+		});
+		$('#main_about .about_keyword .swiper .swiper-wrapper .swiper-slide').removeClass('swiper-slide-active');
+		
+		$('#main_about .about_keyword ul li').on('focusin mouseenter',function(){
+			$(this).addClass('on').siblings().removeClass('on');
+		});
+		
+		/* MAIN GALLERY */
+		var docStyle = document.documentElement.style;
+		document.addEventListener('mousemove', function(e) {
+			docStyle.setProperty('--mouse-x', e.clientX);
+			docStyle.setProperty('--mouse-y', e.clientY);
+		});
+	});
+</script>
+</head>
+<body>
+	<!-- wrap -->
+	<div id="wrap" class="main wh">
+		<!-- skip_nav -->
+<div id="skip_nav">
+  <a href="#content">본문 바로가기</a>
+  <a href="#gnb" class="pc">메뉴 바로가기</a>
+</div>
+<!-- //skip_nav -->
+
+<header class="container">
+	<div class="header_top inner flex_sb">
+		
+		<nav id="gnb" class="pc">
+			<ul>
+				<li>
+					<a href="#">ABOUT</a>
+					<ul class="sub-left">
+						<li><a href="#">회사소개</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">PRODUCTS</a>
+					<ul class="sub-left">
+						<li><a href="#">신제품</a></li>
+						<li><a href="#">카메라</a></li>
+						<li><a href="#">악세사리</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">PARTICLE</a>
+					<ul class="sub-left">
+						<li><a href="#">전시</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="sub.html">#PLAYWITH</a>
+					<ul class="sub-left">
+						<li><a href="sub.html">사진공모전</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+        <h1 class="logo">
+			<a href="/">
+				<img src="/images/main/logo-b.png" alt="위드유 로고">
+			</a>
+		</h1>
+
+		<label>
+			<input type="text" id="search-bar">
+			<span class="search-icon"></span>
+		</label>
+
+		<button class="allMenuBtn"><span>전체메뉴 버튼</span></button>
+		<div class="allMenuWrap vh100" tabindex="-1">
+			<ul class="all_menu">
+				<li>
+					<a href="#">ABOUT</a>
+					<ul>
+						<li><a href="#">회사소개</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">PRODUCTS</a>
+					<ul>
+						<li><a href="#">신제품</a></li>
+						<li><a href="#">카메라</a></li>
+						<li><a href="#">악세사리</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">PARTICLE</a>
+					<ul>
+						<li><a href="#">전시</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">#PLAYWITH</a>
+					<ul>
+						<li><a href="sub.html">사진공모전</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+
+
+		<!--container-->
+		<div id="content">
+			<div id="main_visual" class="container">
+				<!-- <div class="smile" data-aos="zoom-in"></div> -->
+				<div class="main_bg cover">
+					<div class="inner bg_box cover" data-aos="zoom-out">
+						 <img src="/images/main/main_visual1.jpg" alt="푸른하늘과 분홍색 구름 이미지" class="cover">
+						 <img src="/images/main/main_visual2.jpg" alt="두 손이 맞닿을려는 이미지" class="cover"> 
+						<!-- <video autoplay loop>
+							<source src="/video/maincover.mp4" type="mp4">
+						</video> -->
+					</div>
+					<div class="sticky_box">
+						<!-- <div class="pagi">
+							<span></span>
+							<span></span>
+						</div> -->
+						<div class="scr_down taC lg">
+							<i></i>
+						</div>
+					</div>
+				</div>
+
+				<div class="visual_tit lg vh100">
+					<div class="sticky_box">
+						<div class="inner">
+							<div class="with" data-aos="">
+								<strong>FUJI</strong>
+								<p class="pre pc">
+									도전을 받아들이고 "Never STOP"의 정신으로 함께 성장하여 세상에 새로운 가치를 제공하기 위해 혁신적인 기술, 제품 및 서비스를 창조하려는 후지필름의 노력을 반영합니다.
+								</p>
+							</div>
+							<div class="icon_u" data-aos="fade-up"></div>
+
+							<div class="you">
+								<strong data-aos="fade-up" data-aos-offset="-500">FILM</strong>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="visual_info" data-aos="fade-up" data-aos-offset="350">
+					<div class="tit_box">
+						사진을 넘어,<br>
+						이미지를 사랑하는 사람들이<br>
+						하나로 연결되는 만남의 장
+					</div>
+					<div class="txt_box">
+						<p class="txt1 taR pc">
+							후지필름 카메라는 최고의 사진 품질과<br>
+							혁신적인 기술로 세계적으로 알려진 브랜드입니다.<br>
+							감각적인 디자인과 뛰어난 성능을 갖춘 후지필름 카메라는<br>
+							진정한 감성과 멋진 조명을 담은 작품을 만들어줍니다.
+						</p>
+						<span class="arr"></span>
+						<div class="txt2">
+							<strong>
+								사진으로 우리 모두가 함께<br>
+								행복한 세상을 만들어 갑니다.
+							</strong>
+							<p>
+								뛰어난 사진 품질과 창의적인 기능으로<br>
+								특별한 순간을 담아냅니다.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="video-wrapper">
+				<div class="video-inner">
+					<video autoplay loop>
+						<source src="video/maincover.mp4" type="video/mp4"> 
+					</video>
+				</div>
+			</div>
+
+			<!-- CONTENTS ELEMENT -->	
+			<div id="main_business">
+				<div class="vision_box f_center vh100">
+					<img src="/images/contents/swipper-img1.jpg" alt="카메라 광고 이미지" class="cover" data-aos="fade-in">
+					<div class="txt_box lg taC" data-aos="">
+						<span>vision</span>
+						<strong>Realization of our <br>dream</strong>
+						<p class="pre">아름다운 사진을 후지로 담아보세요.</p>
+						<a href="#" class="pre">자세히 보기</a>
+					</div>
+				</div>
+
+				<div class="business_box">
+					<section class="management">
+						<div class="tit">
+							PRODUCTS
+							<!-- <div class="icon_u" data-color="E2DEDA"></div> -->
+						</div>
+						<div class="img_box">
+							<img src="/images/contents/new-products.png" alt="">
+						</div>
+						<div class="txt_box">
+							<strong>신제품</strong>
+							<p>5세대 X-Trans CMOS 5 HR 센서와 X-Processor 5는
+								X 시리즈에 가장 뛰어난 이미징 기술을 제공합니다.
+								<a href="#">자세히 보기</a>
+							</p>
+						</div>
+					</section>
+
+					<section class="device">
+						<div class="img_box resize">
+							<div class="bg">
+								<img src="/images/contents/new-product2.png" alt="">
+								<!-- <b>2</b> -->
+							</div>
+							<div class="bg">
+								<img src="/images/contents/new-product1.png" alt="">
+								<!-- <img src="/images/common/icon_smile.svg" alt="" class="icon"> -->
+							</div>
+						</div>
+						<div class="txt_box">
+							<strong>카메라</strong>
+							<p>고객이 구입한 단말기의 품질불량, 결함 등으로 인하여 교체 또는 해지한 경우, 해당 단말기를 수거하고 확인하여 이상이 없으면 각 제조사로 보내주는 업무를 합니다.
+								<a href="/business/business.php?cont=device">자세히 보기</a>
+							</p>
+						</div>
+					</section>
+
+					<section class="cafe">
+						<div class="img_box sizeup">
+							<img src="/images/contents/particle-1.jpg" alt="">
+							<!-- <b>3</b> -->
+						</div>
+						<div class="txt_box">
+							<strong>전시</strong>
+							<p>
+								작가는 미술과 일상이 와해되는 경계를 자신만의 방식으로
+								보여주고자 했다.매일 거닐던 거리에서 우연히 마주한
+								커다란 곰돌이 모양의 풍선으로 인해 그 공간이 미술관이
+								되는 특별한 경험을 할 수 있는 것이다.
+								<a href="/business/business.php?cont=cafe">자세히 보기</a>
+							</p>
+						</div>
+					</section>
+					<section class="cleaning">
+						<div class="img_box re-size">
+							<div class="bg">
+								<img src="/images/contents/playwith-1.png" alt="대걸레애 약품을 타는 이미지" class="bg">
+								<!-- <b>4</b> -->
+							</div>
+							<div class="bg"><img src="/images/contents/playwith-2.jpg" alt="깔끔한 사무실의 이미지" class="bg"></div>
+						</div>
+						<div class="txt_box">
+							<strong>사진공모전</strong>
+							<p>
+								사진 작가들에게 창작의 기회와 홍보의 장을 제공하며, 동시에 사진 예술의 발전과 다양성을 증진시키는 역할을 합니다.
+								<a href="/business/business.php?cont=cleaning">자세히 보기</a>
+							</p>
+						</div>
+					</section>
+				</div>
+			</div>
+
+			<!-- <main id="parallax__cont"> -->
+				<section id="section7" class="parallax__item">           
+					<div class="parallax__item__text t1">
+						이미지를 통해 영감을 얻는 작업자
+						사진과 영상으로 스토리를 다루는 사색가
+						색다른 경험과 시도를 원하는 탐구자
+						여럿이 하나로 연결되는 곳,
+					</div>
+					<div class="parallax__item__text t2">
+							PARTICLE
+					</div>
+					<div class="parallax__item__text t3">
+						무수히 많은 입자들이 모여 새로운 대상을 이루듯
+						우리 모두가 품고 있는 고유의 관점들이 모여,
+						새로운 이야기를 만들어내는 공간입니다.
+					</div>
+					<!--<div class="parallax__item__text t4"></div>
+					<div class="parallax__item__text t5">코딩은</div>
+					<div class="parallax__item__text t6">누구나</div>
+					<div class="parallax__item__text t7">할 수 있다.</div> -->
+					<svg class="arrows">
+						<g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-width="2">
+							<path class="a1"  d="M21 31 L11 41 1 31"/>
+							<path class="a2" d="M21 16 L11 26 1 16" opacity=".655"/>
+							<path class="a3" d="M21 1 L11 11 1 1" opacity=".371"/>
+						</g>
+					</svg>
+				</section>
+				<!-- //section7 -->
+			<!-- </main> -->
+
+			<div id="main_about"> 
+				<div class="txt_box container box-width">
+					<div class="inner txt-inner">
+						<div class="tit lg">
+							<p data-aos="fade-right">With the camera,</p>
+							<span data-aos="fade-left">we can go together</span>
+						</div>
+						<p class="info" data-aos="fade-up">
+							"초보부터 전문가까지, 모두 모여라!<br>
+							카메라 모임에서 우리는 함께 성장합니다."
+						</p>
+						<a href="/company/about.php" data-aos="fade-up" class="arrow-color">
+							자세히 보기
+							<svg viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.2059 0.876953L26 9.87695M26 9.87695L17.2059 18.877M26 9.87695H0" stroke="#C40452" stroke-width="1.52941"/></svg>
+						</a>
+					</div>
+				</div>
+
+				<div class="about_keyword">
+					<!-- <span class="cursor_drag pc">드래그 안내 커서</span> -->
+					<div style="width:0; height:0; overflow:hidden;">다음은 커서를 좌우로 드래그 하면서 보는 콘텐츠 입니다.</div>
+					<div class="swiper">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide on" tabindex="0">
+								
+								<div class="img_box">
+									<img src="/images/contents/swipper-1.jpg" alt="커피를 내리는 모습" class="cover">
+								</div>
+							</li>
+							<li class="swiper-slide" tabindex="0">
+								
+								<div class="img_box">
+									<img src="/images/contents/swipper-2.jpg" alt="서류를 보며 계산기를 이용하는 모습" class="cover">
+								</div>
+							</li>
+							<li class="swiper-slide" tabindex="0">
+								
+								<div class="img_box">
+									<img src="/images/contents/swipper-3.jpg" alt="핸드폰을 이용하는 모습" class="cover">
+								</div>
+							</li>
+							<li class="swiper-slide" tabindex="0">
+								
+								<div class="img_box">
+									<img src="/images/contents/swipper-4.jpg" alt="청소기를 이용하는 모습" class="cover">
+								</div>
+							</li>
+							<li class="swiper-slide" tabindex="0">
+								
+								<div class="img_box">
+									<img src="/images/contents/swipper-5.jpg" alt="커피를 내리는 모습" class="cover">
+								</div>
+							</li>
+							<li class="swiper-slide" tabindex="0">
+								
+								<div class="img_box">
+									<img src="/images/contents/swipper-6.jpg" alt="두사람이 러닝을 하고있음" class="cover">
+								</div>
+							</li>
+							<li class="swiper-slide" tabindex="0">
+								
+								<div class="img_box">
+									<img src="/images/contents/swipper-7.jpg" alt="아늑한 분위기의 카페" class="cover">
+								</div>
+							</li>
+							<li class="swiper-slide" tabindex="0">
+								
+								<div class="img_box">
+									<img src="/images/contents/swipper-8.jpg" alt="두 사람이 핸드폰을 보며 웃고있음" class="cover">
+								</div>
+							</li>
+							<!-- <li class="swiper-slide" tabindex="0">
+								
+								<div class="img_box">
+									<img src="/images/contents/swipper-9.jpg" alt="호수에서 노를 젓는 사람" class="cover">
+								</div>
+							</li>
+							<li class="swiper-slide" tabindex="0">
+								
+								<div class="img_box">
+									<img src="/images/contents/swipper-10..jpg" alt="두 사람이 커피를 마시고 있음" class="cover">
+								</div>
+							</li>
+							<li class="swiper-slide" tabindex="0">
+								
+								<div class="img_box">
+									<img src="/images/contents/swipper-11.jpg" alt="대본을 보며 리딩하는 사람" class="cover">
+								</div>
+							</li>
+							<li class="swiper-slide" tabindex="0">
+								
+								<div class="img_box">
+									<img src="/images/contents/swipper-12.jpg" alt="커피와 책" class="cover">
+								</div>
+							</li> -->
+							<li class="swiper-slide mo"></li>
+
+
+						</ul>
+					</div>
+					<div class="nav mo">
+						<button class="prv"></button>
+						<button class="nxt"></button>
+					</div>
+				</div>
+			</div>
+
+				
+		</div>
+		<!--//container-->
+		<footer id="footer-wrapper">
+				<div id="footer-inner">
+					<div class="footer-logo">
+						<a href="#">
+							<img src="/images/main/logo-w.png" alt="푸터로고">
+						</a>
+					</div>
+
+					<div class="footer-details">
+						<ul>
+							<li><a href="#">회사소개</a></li>
+							<li><a href="#">이용약관</a></li>
+							<li><a href="#"><span>개인정보처리방침</span></a></li>
+							<li><a href="#">사이트맵</a></li>
+						</ul>
+						<dl>
+							<dt>상호명 :</dt>
+							<dd>후지필름코리아(주),</dd>
+							<dt class="ml">대표자명 :</dt>
+							<dd>야마모토 마사토</dd>
+						</dl>
+						<dl>
+							<dt>사업자등록번호 :</dt>
+							<dd>120-87-73486,</dd>
+							<dt class="ml">통신판매업신고 :</dt>
+							<dd>2012-서울강남-01006</dd>
+						</dl>
+						<dl>
+							<dt>주소 :</dt>
+							<dd>서울특별시 강남구 선릉로 838, 페코빌딩 3층,</dd>
+							<dt class="ml">대표번호 :</dt>
+							<dd>1577-4793</dd>
+							
+						</dl>
+					</div>
+
+					<div class="footer-num">
+						<p class="phone_number">1577-4793</p>
+						<p class="worktime">평일 09:00 - 18:00 / 토요일, 일요일 및 공휴일 휴무</p>
+						
+						<div class="sns-wrap">
+
+							<a href="#"><img src="/icon/twitter-icon-footer.png" alt="트위터로고"></a>
+							<a href="#"><img src="/icon/instagram-icon-footer.png" alt="인스타그램로고"> </a>
+							<a href="#"><img src="/icon/facebook-icon-footer.png" alt="페이스북로고"></a>
+						</div>
+					</div>
+				</div>
+		</footer>
+
+		<div class="ft_blank"></div>
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KL20BHVW0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KL20BHVW0');
+</script>
+
+
+
+<div style='display:none;'>
+<!--폼 처리용 히튼 프레임 시작-->
+<!-- <iframe id="frm_hiddenFrame" name="frm_hiddenFrame" frameborder="0" scrolling="no" height="800" width="800" title="내용없음" ></iframe> -->
+<!--폼 처리용 히튼 프레임 종료-->
+</div>
+	</div>
+	<!-- //wrap -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    <script>
+
+        //07 : 텍스트 제자리 애니메이션
+        const ani7 = gsap.timeline();
+        ani7.from("#section7 .t1", { autoAlpha: 0, duration: 1, y: 300}, "+=1")
+            .from("#section7 .t2", { autoAlpha: 0, duration: 1, y: 300}, "+=1")
+            .from("#section7 .t3", { autoAlpha: 0, duration: 1, y: 300}, "+=1")
+            // .from("#section7 .t4", { autoAlpha: 0, duration: 1, y: 300}, "+=1")
+            // .from("#section7 .t5", { autoAlpha: 0, duration: 1, y: 300}, "+=1")
+            // .from("#section7 .t6", { autoAlpha: 0, duration: 1, y: 300}, "+=1")
+            // .from("#section7 .t7", { autoAlpha: 0, duration: 1, y: 300}, "+=1")
+
+        ScrollTrigger.create({
+            animation: ani7,
+            trigger: "#section7",
+            start: "top top",
+            end: "+=6000",
+            scrub: true,
+            pin: true,
+            anticipatePin: 1,
+            markers: false
+        });
+
+    </script>
+
+
+
+
+</body>
+</html>

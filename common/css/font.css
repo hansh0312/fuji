@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+/* NOTO SANS KR */
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-weight: 900;
+	font-display: swap;
+	src: local('NotoSansKR-Black'), url('fonts/notosansKR/NotoSansKR-Black.woff2') format('woff2'), url('fonts/notosansKR/NotoSansKR-Black.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-weight: 700;
+	font-display: swap;
+	src: local('NotoSansKR-Bold'), url('fonts/notosansKR/NotoSansKR-Bold.woff2') format('woff2'), url('fonts/notosansKR/NotoSansKR-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-weight: 500;
+	font-display: swap;
+	src: local('NotoSansKR-Medium'), url('fonts/notosansKR/NotoSansKR-Medium.woff2') format('woff2'), url('fonts/notosansKR/NotoSansKR-Medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-weight: 400;
+	font-display: swap;
+	src: local('NotoSansKR-Regular'), url('fonts/notosansKR/NotoSansKR-Regular.woff2') format('woff2'), url('fonts/notosansKR/NotoSansKR-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-weight: 300;
+	font-display: swap;
+	src: local('NotoSansKR-Light'), url('fonts/notosansKR/NotoSansKR-Light.woff2') format('woff2'), url('fonts/notosansKR/NotoSansKR-Light.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Noto Sans KR';
+	font-weight: 100;
+	font-display: swap;
+	src: local('NotoSansKR-Thin'), url('fonts/notosansKR/NotoSansKR-Thin.woff2') format('woff2'), url('fonts/notosansKR/NotoSansKR-Thin.woff') format('woff');
+}
+
+/* Noto Sans CJK */
+@font-face {
+  font-family: 'Noto Sans CJK KR';
+  font-style: normal;
+  font-weight: 100;
+  src: local('NotoSansCJKkr-Thin'),
+      url('fonts/notosansCJKKr/NotoSansCJKkr-Thin.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK KR';
+  font-style: normal;
+  font-weight: 300;
+  src: local('NotoSansCJKkr-Light'),
+      url('fonts/notosansCJKKr/NotoSansCJKkr-Light.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK KR';
+  font-style: normal;
+  font-weight: 400;
+  src: local('NotoSansCJKkr-Regular'),
+      url('fonts/notosansCJKKr/NotoSansCJKkr-Regular.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK KR';
+  font-style: normal;
+  font-weight: 500;
+  src: local('NotoSansCJKkr-Medium'),
+      url('fonts/notosansCJKKr/NotoSansCJKkr-Medium.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK KR';
+  font-style: normal;
+  font-weight: 700;
+  src: local('NotoSansCJKkr-Bold'),
+      url('fonts/notosansCJKKr/NotoSansCJKkr-Bold.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK KR';
+  font-style: normal;
+  font-weight: 900;
+  src: local('NotoSansCJKkr-Black'),
+      url('fonts/notosansCJKKr/NotoSansCJKkr-Black.otf') format('otf');
+}
+
+/* PRETENDARD */
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 900;
+	font-display: swap;
+	src: local('Pretendard Black'), url('fonts/Pretendard/Pretendard-Black.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 800;
+	font-display: swap;
+	src: local('Pretendard ExtraBold'), url('fonts/Pretendard/Pretendard-ExtraBold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 700;
+	font-display: swap;
+	src: local('Pretendard Bold'), url('fonts/Pretendard/Pretendard-Bold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 600;
+	font-display: swap;
+	src: local('Pretendard SemiBold'), url('fonts/Pretendard/Pretendard-SemiBold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard Medium'), url('fonts/Pretendard/Pretendard-Medium.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 400;
+	font-display: swap;
+	src: local('Pretendard Regular'), url('fonts/Pretendard/Pretendard-Regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 300;
+	font-display: swap;
+	src: local('Pretendard Light'), url('fonts/Pretendard/Pretendard-Light.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 200;
+	font-display: swap;
+	src: local('Pretendard ExtraLight'), url('fonts/Pretendard/Pretendard-ExtraLight.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 100;
+	font-display: swap;
+	src: local('Pretendard Thin'), url('fonts/Pretendard/Pretendard-Thin.woff2') format('woff2');
+}
+
+/* LG SMART */
+@font-face {
+	font-family: 'LGSmart';
+	font-weight: 300;
+	font-display: swap;
+	src: local('LGSmart Light'), url('fonts/LGsmart/LGSmHaTL.ttf') format('trueType');
+}
+@font-face {
+	font-family: 'LGSmart';
+	font-weight: 400;
+	font-display: swap;
+	src: local('LGSmart Regular'), url('fonts/LGsmart/LGSmHaTR.ttf') format('trueType');
+}
+@font-face {
+	font-family: 'LGSmart';
+	font-weight: 500;
+	font-display: swap;
+	src: local('LGSmart SemiBold'), url('fonts/LGsmart/LGSmHaTSB.ttf') format('trueType');
+}
+@font-face {
+	font-family: 'LGSmart';
+	font-weight: 600;
+	font-display: swap;
+	src: local('LGSmart Bold'), url('fonts/LGsmart/LGSmHaTB.ttf') format('trueType');
+}
+
+
+/* STYLE */
+.cormo{font-family: 'Cormorant Garamond', serif;}
+.mont{font-family: 'Montserrat', sans-serif;}
+.poppins{font-family: 'Poppins', sans-serif;}
+.roboto{font-family: 'Roboto', sans-serif;}
+.pre{font-family: 'Pretendard', sans-serif;}
+.noto{font-family: 'Noto Sans KR', sans-serif;}
+.noto_cjk{font-family: 'Noto Sans CJK KR', sans-serif;}
+.lg{font-family: 'LGSmart', sans-serif;}

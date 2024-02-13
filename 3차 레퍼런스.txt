@@ -1,0 +1,81 @@
+3차 레퍼런스 (카메라/사진)
+
+호스팅 주소 : http://fujifilm.dothome.co.kr/index.html
+
+-- 카메라브랜드 사이트 --
+1. 소니 #반응형
+https://store.sony.co.kr/
+
+2. 캐논
+https://kr.canon/main
+
+3. 후지필름 #반응형
+https://fujifilm-korea.co.kr/  <<!! 채택
+
+
+--12.27--디자인 레퍼런스(parallax)---
+
+$$ 웨버 #반응형
+https://www.wever.kr/ 000 포토폴리오
+
+$$ 디지털 디자인 #반응형
+http://www.de-ssion.com/v22/index.html 000
+
+1. 블림프 #반응형
+https://blimp.space/
+
+2. 위드유 #반응형
+https://withuplus.co.kr/#pnd
+
+3. 시효 
+https://www.shihyo.com/kr/main
+
+4. KCH글로벌  #반응형 
+https://www.kchglobal.com/
+
+5.아더 #반응형 
+http://arthur.co.kr/#section06
+
+
+-- 효과 --
+https://wsss.tistory.com/1821 //애플 사이트 스크롤
+
+https://wsss.tistory.com/1621 //스크롤 내리면 움직이는 이미지
+
+https://wsss.tistory.com/1882 스크롤 다운하면 이미지 변경하기
+
+https://webstoryboy.github.io/gsap2023/gsap03.html //parallax
+
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+video 문구
+사진을 넘어, 이미지를 사랑하는
+사람들이 하나로 연결되는 만남의 장
+
+-- main menu -- 주메뉴 max 5 / 서브메뉴 max 5
+#ABOUT
+ -회사소개
+
+#PRODUCTS
+ -신제품
+ -카메라
+ -악세서리
+
+#PLAYWITH
+ -사진공모전
+
+#PARTICLE
+ -전시
+
+-- sub page menu --
+
+
+
+
+-- section 1 ~ ?? --
+
+
+
+
+

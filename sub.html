@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+	<title>PLAYWITH</title>
+	<meta name="keywords" content="후지필름, 주식회사 후지필름, 장애인 표준 사업장, BUSINESS" />	<meta name="Description" content="후지필름 카메라는 최고의 사진 품질과 혁신적인 기술로 세계적으로 알려진 브랜드입니다." />		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<link rel='canonical' href='https://withuplus.co.kr/business/business.php?cont=management' />
+    <link rel="stylesheet" href="/common/css/common.css">
+    <link rel="stylesheet" href="/common/css/gsap.css">
+    <link rel="stylesheet" href="/common/css/main.css">
+    
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/common/js/slick.min.js"></script>
+	<script type="text/javascript" src="/common/js/swiper.min.js"></script>
+	<script type="text/javascript" src="/common/js/common.js"></script>
+	<script type="text/javascript" src="/common/js/_basicFunction.js"></script>
+	<script type="text/javascript" src="/common/js/aos.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
+
+
+	<!-- 페이스북 -->
+	<meta property="og:title"			content="후지필름"/>
+	<meta property="og:site_name"		content="후지필름"/>
+	<meta property="og:type"			content=""/>
+	<meta property="og:url"				content=""/>
+	<meta property="og:image"			content="/images/common/og.png">
+	<meta property="og:image:width"		content=""/>
+	<meta property="og:description"		content="후지필름 카메라는 최고의 사진 품질과 혁신적인 기술로 세계적으로 알려진 브랜드입니다."/>
+	<!-- 트위터 -->
+	<meta name="twitter:card"			content="summary_large_image">
+	<meta name="twitter:title"			content="후지필름">
+	<meta name="twitter:site"			content="후지필름">
+	<meta name="twitter:creator"		content="후지필름">
+	<meta name="twitter:image"			content="/images/common/og.png">
+	<meta name="twitter:description"	content="후지필름 | 후지필름 | ">
+	
+    <script>
+	$(function(){
+		if($(window).width() > 1280){
+			let busi_visual = gsap.timeline({
+				scrollTrigger: { 
+					trigger: '.busi_visual',
+					start: "top top",
+					end: "100% 70%",
+					scrub: true,
+				},
+			});
+
+			busi_visual
+			.to('.busi_visual .img_box',1,{y:"-30vh", scale:"1.2", filter: "brightness(1)"})
+		}else{
+			let busi_visual = gsap.timeline({
+				scrollTrigger: { 
+					trigger: '.busi_visual',
+					start: "top top",
+					end: "100% 70%",
+					scrub: true,
+				},
+			});
+
+			busi_visual
+			.to('.busi_visual .img_box',1,{y:"-30vh", scale:"1.2"})
+
+
+			let big_tit = gsap.timeline({
+				scrollTrigger: {
+					trigger: '#device .big_tit',
+					start: "top 60%",
+					end: "top 60%",
+					scrub: true,
+				},
+			});
+
+			big_tit
+			.to('#device .big_tit p + p',1,{className: 'on'})
+
+			let big_tit2 = gsap.timeline({
+				scrollTrigger: { 
+					trigger: '#cafe .big_tit',
+					start: "top 60%",
+					end: "top 60%",
+					scrub: true,
+				},
+			});
+
+			big_tit2
+			.to('#cafe .big_tit p + p',1,{className: 'on'})
+		}
+
+		/* LINE_W */
+		let line_w = gsap.timeline({
+			scrollTrigger: { 
+				trigger: '.line_w',
+				start: "top 50%",
+				end: "100% 50%",
+				scrub: true,
+			},
+		});
+
+		line_w
+		.to('.line_w svg',1,{ strokeDashoffset: 5510})
+		.to('.line_w svg',2,{ strokeDashoffset: 0})
+		.to('.line_w',1,{className: 'line_w on'})
+		
+		/* BUSNIESS */
+		let business = gsap.timeline({
+			scrollTrigger: { 
+				trigger: '.device_roll',
+				start: "top top",
+				end: "bottom bottom",
+				scrub: true,
+			},
+		});
+
+		business
+		.to('.device_roll',{className: 'device_roll sceneA'})
+		.to('.device_roll',{className: 'device_roll sceneB'})
+		.to('.device_roll',{className: 'device_roll sceneC'})
+
+		setTimeout(() => {
+			var cont_arr = ['management','device','cafe','cleaning'];
+			var params = {};
+			window.location.search.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(str, key, value) { params[key] = value; });
+			console.log(params.cont);
+			
+			for(i=0; i<cont_arr.length; i++){
+				var anchor = $("#"+ cont_arr[i]).offset().top;
+				if(params.cont == cont_arr[i]){
+					window.scrollTo(0, anchor);
+					console.log(cont_arr[i]);
+				};
+			}
+		}, 50);
+	});
+</script>
+</head>
+<body>
+	<!-- wrap -->
+	<div id="wrap" class="business wh">
+
+		<!-- skip_nav -->
+<div id="skip_nav">
+  <a href="#content">본문 바로가기</a>
+  <a href="#gnb" class="pc">메뉴 바로가기</a>
+</div>
+<!-- //skip_nav -->
+
+<header class="container sub-header">
+	<div class="header_top inner flex_sb">
+		
+		<nav id="gnb" class="pc">
+			<ul>
+				<li>
+					<a href="#">ABOUT</a>
+					<ul>
+						<li><a href="#">회사소개</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">PRODUCTS</a>
+					<ul>
+						<li><a href="#">신제품</a></li>
+						<li><a href="#">카메라</a></li>
+						<li><a href="#">악세사리</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">PARTICLE</a>
+					<ul>
+						<li><a href="#">전시</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">#PLAYWITH</a>
+					<ul>
+						<li><a href="#">사진공모전</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+
+        <h1 class="logo">
+			<a href="index.html">
+				<img src="/images/main/logo-b.png" alt="후지필름 로고">
+			</a>
+		</h1>
+
+		<button class="allMenuBtn"><span>전체메뉴 열기</span></button>
+		<div class="allMenuWrap vh100" tabindex="-1">
+			<ul class="all_menu">
+				<li>
+					<a href="#">ABOUT</a>
+					<ul class="sub-left">
+						<li><a href="#">회사소개</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">PRODUCTS</a>
+					<ul class="sub-left">
+						<li><a href="#">신제품</a></li>
+						<li><a href="#">카메라</a></li>
+						<li><a href="#">악세사리</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">PARTICLE</a>
+					<ul class="sub-left">
+						<li><a href="#">전시</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="sub.html">#PLAYWITH</a>
+					<ul class="sub-left">
+						<li><a href="sub.html">사진공모전</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+
+
+
+		<div id="content">
+			<!-- <div class="busi_visual container">
+				<div class="img_box">
+					<img src="/images/contents/busi_visual.jpg" alt="사람 네명이 어깨동무하고있는 뒷모습" class="cover" data-aos="zoom-out">
+				</div>
+				<div class="txt_box lg">
+					<div class="tit" data-aos="">
+						<strong class="fx"><b>위드유는 새로운 업무지원 서비스를</b></strong>
+						<strong class="fx"><b>지속적으로 발굴하고 제공합니다.</b></strong>
+					</div>
+					<p class="pre" data-aos="fade-up" data-aos-delay="300" data-aos-offset="-200">사람 중심의 솔루션을 제공하며, 디지털 경험을 향상시켜 <br class="mo">미래의 성공을 위한 <br class="pc">동반자가 되겠습니다.</p>
+				</div>
+				<div class="line_w tcX">
+					<svg viewBox="0 0 1580 1522" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1544 1L446.5 652L0.5 1L1579 972L1335.78 1505L1226 1264.42L1116.22 1505L918.632 1072" stroke="#E6E0D5"/>
+						<path d="M1377.85 1505H1375.48V1473H1377.85V1505ZM1375.61 1462.44H1377.98V1467.94H1375.61V1462.44ZM1390.25 1475.37H1382.89V1473H1390.25V1462.44H1392.62V1473H1400.04V1475.37H1392.62V1505H1390.25V1475.37ZM1425.01 1505L1425.07 1488.1C1425.07 1484.52 1424.2 1481.38 1422.45 1478.7C1420.74 1476.01 1418.63 1474.66 1416.11 1474.66C1414.49 1474.66 1413 1475.15 1411.63 1476.14C1410.31 1477.07 1408.92 1478.38 1407.47 1480.04V1505H1405.11V1457H1407.47V1476.84C1410.29 1473.81 1413.3 1472.3 1416.5 1472.3C1418.25 1472.3 1420.02 1472.96 1421.81 1474.28C1425.56 1477.01 1427.44 1481.6 1427.44 1488.04L1427.38 1505H1425.01ZM1468.18 1473H1470.55V1505.83C1470.55 1508.78 1470.19 1511.34 1469.46 1513.51C1468.73 1515.73 1467.8 1517.37 1466.64 1518.44C1464.51 1520.53 1462.38 1521.58 1460.24 1521.58C1457.43 1521.58 1454.74 1520.38 1452.18 1517.99V1514.92C1454.87 1517.78 1457.43 1519.21 1459.86 1519.21C1462.33 1519.21 1464.34 1517.89 1465.88 1515.24C1467.41 1512.59 1468.18 1509.44 1468.18 1505.77V1504.74C1460.54 1504.45 1455.21 1502.78 1452.18 1499.75C1449.53 1497.02 1448.21 1493.03 1448.21 1487.78C1448.21 1478.35 1448.23 1473.43 1448.28 1473H1450.64C1450.6 1473.38 1450.58 1478.33 1450.58 1487.85C1450.58 1493.44 1452.31 1497.32 1455.76 1499.5C1458.84 1501.42 1462.97 1502.38 1468.18 1502.38V1473ZM1500.99 1487.78C1500.99 1490.69 1500.71 1493.25 1500.16 1495.46C1499.6 1497.64 1498.9 1499.33 1498.05 1500.52C1497.24 1501.71 1496.25 1502.67 1495.1 1503.4C1492.2 1505.28 1489.02 1505.66 1485.57 1504.55C1484.37 1504.17 1483.11 1503.49 1481.79 1502.5C1480.47 1501.48 1479.4 1499.88 1478.59 1497.7C1477.78 1495.53 1477.37 1492.86 1477.37 1489.7C1477.37 1484.58 1478.4 1480.42 1480.45 1477.22C1482.49 1473.98 1485.44 1472.36 1489.28 1472.36C1493.16 1472.36 1496.06 1473.87 1497.98 1476.9C1499.94 1479.93 1500.95 1483.56 1500.99 1487.78ZM1488.45 1502.76L1489.21 1502.82L1489.92 1502.76C1495.72 1502.21 1498.62 1497.32 1498.62 1488.1C1498.62 1484.31 1497.85 1481.13 1496.32 1478.57C1494.78 1476.01 1492.33 1474.73 1488.96 1474.73C1486.78 1474.73 1484.97 1475.47 1483.52 1476.97C1481 1479.61 1479.74 1483.73 1479.74 1489.32V1489.83C1479.74 1493.37 1480.47 1496.36 1481.92 1498.79C1483.37 1501.18 1485.54 1502.5 1488.45 1502.76ZM1510.03 1473L1509.96 1489.9C1509.96 1493.48 1510.81 1496.62 1512.52 1499.3C1514.27 1501.95 1516.43 1503.27 1518.99 1503.27C1521.59 1503.27 1524.45 1501.5 1527.56 1497.96V1473H1529.93V1505H1527.56V1501.16C1524.79 1504.15 1521.78 1505.64 1518.54 1505.64C1516.36 1505.64 1514.12 1504.62 1511.82 1502.57C1510.58 1501.46 1509.56 1499.82 1508.75 1497.64C1507.98 1495.46 1507.59 1492.9 1507.59 1489.96L1507.66 1473H1510.03Z" fill="#E6E0D5"/>
+					</svg>
+				</div> 
+			</div> -->
+            
+			<div id="management" class="container">
+				<div class="busi_tit">
+					<!-- <strong class="fx" data-aos=""><b>01</b></strong> -->
+					<span data-aos="fade-up">#PLAYWITH</span>
+					<p data-aos="fade-up">
+                        사진을 통해 주어진 주제나 주제없는 자유주제로 자신의 창의력을 발휘할 수 있는 기회를 제공하는 공간
+                    </p>
+				</div>
+				<div class="manage_box">
+					<div class="img_box">
+						<img src="/images/sub-contents/top-img.png" alt="기후환경 사진전" data-aos="zoom-out">
+					</div>
+					<div class="txt_box">
+						<span data-aos="fade-up">PHOTO AWARDS CCPP 제1회 기후환경 사진공모</span>
+						<p data-aos="fade-up">충무아트센터는 기후위기 심각성에 공감하여 모두의 기후 행동을 앞당기기<br>위한 제1회 기후환경 사진공모를 개최합니다.</p>
+					</div>
+				</div>
+				<div class="manage_box_ty2" >
+					<div class="img_box">
+						<img src="/images/sub-contents/images2.jpg" alt="" data-aos="zoom-out">
+					</div>
+					<div class="txt_box f_center" data-aos="">
+						<div class="inner"> 
+							<i class="tl"></i>
+							<i class="tr"></i>
+							<!-- <span class="mont">Sales Support</span> -->
+							<strong>사진은 순간을 영원히 간직할 수 있는 힘을 갖고 있습니다. 사진을 통해 우리는 순간의 아름다움과 감동을 다시 떠올리고, 그 순간을 다른 이들과 공유할 수 있습니다.</strong>
+							<p>당신의 성공은 우리의 열정입니다. 함께 꿈을 이뤄갑니다.</p>
+							<i class="bl"></i>
+							<i class="br"></i>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="manage_box" >
+					<div class="img_box">
+						<img src="/images/contents/busi_management3.png" alt="회의하고 있는 사람들의 손짓들" data-aos="zoom-out">
+					</div>
+					<div class="txt_box">
+						<span data-aos="fade-up">Risk관리</span>
+						<p data-aos="fade-up">영업활동에 따른 각종의 위험요소를 최소화하기 위해서 다양한 정보를 수집하고, 분석하여 이상영업활동을 관리하고 개선토록 지원합니다. 일반적으로 예측할 수 있는 위험요소의 내용이나 그 영향을 분석하고 위험요소 처리 수단의 선택과 그 결과를 검토하여 대안이나 대책을 수립합니다.</p>
+					</div>
+				</div> -->
+			</div>
+			<div class="busi_device" id="device">
+				<div class="device_tit container">
+					<div class="busi_tit nua">
+						<strong class="fx" data-aos=""><b>'누아 (NUA) 작가'</b></strong>
+						<span data-aos="fade-up">후지필름 팔레트</span>
+						<p data-aos="fade-up">
+							후지필름 공식 인스타그램에서 매월 열리는 참여 이벤트로,<br>
+							매월 #후지필름팔레트 해시태그와 함께 응모된 사진 중 1점을 선정해<br>
+							아티스트만의 화법으로 그려 내또 하나의 아트웍을<br>
+							 탄생 시키는 프로젝트 입니다.				
+						</p>
+					</div>
+					<div class="img_slot1" data-aos="fade-up">
+						<img src="/images/sub-contents/img-main.jpg" alt="">
+					</div>
+					<div class="img_slot2" data-aos="">
+						<img src="/images/contents/busi_device2.png" alt="">
+					</div>
+				</div>
+
+				<div class="device_list">
+					<!-- <div class="big_tit lg">
+						<p class="fx" data-aos=""><b>Device</b></p>
+						<p class="fx" data-aos=""><b>operation</b></p>
+					</div> -->
+					<div class="device_roll">
+						<div class="sticky_box">
+							<span class="imp pc">* 아래로 스크롤 해주세요. <i>↓</i></span>
+							<ul>
+								<li>
+									<div class="inner flex_sb top">
+										<div class="txt_box">
+											<span>[사진이론초급] 제주도에서 최고의 사진을! 장소와 촬영법</span>
+											<p>
+												강사 : 정기수<br>
+												접수 기간 : 2023.12.22(금) ~ 2024.01.19(금)<br>
+												수강일 : 2024.01.21(일)
+												수강 인원 : 12명
+											</p>
+										</div>
+										<div class="img_box">
+											<img src="/images/sub-contents/picture-1.jpg" alt="장소와 촬영법">
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="inner flex_sb top">
+										<div class="txt_box">
+											<span>[사진촬영초급] 인물 카페 출사</span>
+											<p>
+												강사 : 이원석<br>
+												접수 기간 : 2023.12.22(금) ~ 2024.01.24(수)<br>
+												수강일 : 2024.01.26(금)<br>
+												수강 인원 : 12명
+											</p>
+										</div>
+										<div class="img_box">
+											<img src="/images/sub-contents/picture-2.jpg" alt="인물 카페 출사">
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="inner flex_sb top">
+										<div class="txt_box">
+											<span>[사진이론초급] 건축 공간 촬영 이론</span>
+											<p>
+												강사 : 이원석<br>
+												접수 기간 : 2023.12.22(금) ~ 2024.01.20(토)<br>
+												수강일 : 2024.01.22(월)<br>
+												수강 인원 : 10명
+											</p>
+										</div>
+										<div class="img_box">
+											<img src="/images/sub-contents/picture-3.jpg" alt="건축 공간 촬영 이론">
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="nav">
+
+								<p>3</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="cafe">
+				<div class="tit_box">
+					<!-- <div class="busi_tit" >
+						<strong class="fx" data-aos=""><b>03</b></strong>
+						<span data-aos="fade-up">Café운영</span>
+						<p data-aos="fade-up">LG유플러스 사옥에 근무하고 있는 임직원을 위하여 <br>질좋은 음료서비스를 제공합니다.</p>
+					</div> -->
+					<div class="img_box"  data-aos="zoom-out">
+						<a href="#"><img src="/images/sub-contents/03_PC_AA_Banner.png" alt="수강신청"></a>
+					</div>
+					<!-- <div class="big_tit lg">
+						<p class="fx" data-aos=""><b>Café</b></p>
+						<p class="fx" data-aos=""><b>operation</b></p>
+					</div> -->
+					
+				</div>
+				<ul class="cafe_list">
+					<li data-aos="fade-up" >
+						<div class="txt_box">
+							<span>무엇을<br>도와드릴까요?</span>
+						</div>
+						<ul class="lists">
+							<li class="help__list notice">
+								<a href="#">공지사항</a>
+							</li>
+							<li class="help__list location">
+								<a href="#">매장안내</a>
+							</li>
+							<li class="help__list customer">
+								<a href="#">고객센터</a>
+							</li>
+							<li class="help__list service">
+								<a href="#">제품지원</a>
+							</li>
+						</ul>
+						
+						
+					</li>	
+				</ul>
+			</div>
+			
+		</div>
+
+		<footer id="footer-wrapper">
+			<div id="footer-inner">
+				<div class="footer-logo">
+					<a href="#">
+						<img src="/images/main/logo-w.png" alt="푸터로고">
+					</a>
+				</div>
+
+				<div class="footer-details">
+					<ul>
+						<li><a href="#">회사소개</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#"><span>개인정보처리방침</span></a></li>
+						<li><a href="#">사이트맵</a></li>
+					</ul>
+					<dl>
+						<dt>상호명:</dt>
+						<dd>후지필름일레트로닉이미징코리아(주),</dd>
+						<dt class="ml">대표자명:</dt>
+						<dd>야마모토 마사토</dd>
+					</dl>
+					<dl>
+						<dt>사업자등록번호:</dt>
+						<dd>120-87-73486,</dd>
+						<dt>통신판매업신고:</dt>
+						<dd>2012-서울강남-01006</dd>
+					</dl>
+					<dl>
+						<dt>주소:</dt>
+						<dd>서울특별시 강남구 선릉로 838, 페코빌딩 3층,</dd>
+						<dt class="ml">대표번호:</dt>
+						<dd>1577-4793</dd>
+						<dt class="ml">팩스번호:</dt>
+						<dd>02-538-8659</dd>
+					</dl>
+				</div>
+
+				<div class="footer-num">
+					<p class="phone_number">1577-4793</p>
+					<p class="worktime">평일 09:00 - 18:00 / 토요일, 일요일 및 공휴일 휴무</p>
+					<div class="sns-wrap">
+
+						<a href="#"><img src="/icon/twitter-icon-footer.png" alt="트위터로고"></a>
+						<a href="#"><img src="/icon/instagram-icon-footer.png" alt="인스타그램로고"> </a>
+						<a href="#"><img src="/icon/facebook-icon-footer.png" alt="페이스북로고"></a>
+					</div>
+				</div>
+			</div>
+	</footer>
+
+		<div class="ft_blank"></div>
+
+
+<!-- Google Tag Manager -->
+<!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','G-8KL20BHVW0');</script> -->
+<!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8KL20BHVW0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8KL20BHVW0');
+</script>
+
+
+
+<div style='display:none;'>
+<!--폼 처리용 히튼 프레임 시작-->
+<!-- <iframe id="frm_hiddenFrame" name="frm_hiddenFrame" frameborder="0" scrolling="no" height="800" width="800" title="내용없음" ></iframe> -->
+<!--폼 처리용 히튼 프레임 종료-->
+</div>
+	</div>
+	<!-- //wrap -->
+</body>
+</html>
